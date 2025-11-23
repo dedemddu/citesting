@@ -19,6 +19,8 @@ jobs:
 
     - name: Instalar dependencias
       run: npm ci
+      working-directory: ./myapp
 
     - name: Ejecutar pruebas
       run: npm test -- --watchAll=false
+      working-directory: ./myapp
